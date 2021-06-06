@@ -18,6 +18,7 @@ namespace DevFitness.API.Core.Entity
             Height = height;
             Weight = weight;
             BirthDate = birthDate;
+            Meals = new List<Meal>();
         }
 
         public IEnumerable<Meal> Meals { get; set; }
