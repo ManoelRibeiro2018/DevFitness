@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DevFitness.API.Core.Entity
 {
@@ -11,13 +8,11 @@ namespace DevFitness.API.Core.Entity
         public bool Active { get; private set; }
         public DateTime CreateAt { get; private set; }
 
-        public EntityBase()
+        protected EntityBase()
         {
             Active = true;
             CreateAt = DateTime.Now;
         }
-
-
         protected void Deactivate()
         {
             Active = false;
